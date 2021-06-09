@@ -1,3 +1,3 @@
-﻿Update-SessionEnvironment
+﻿$ErrorActionPreference = 'Stop'
 
-code --uninstall-extension doggy8088.angular-extension-pack
+Uninstall-VsCodeExtension -ExtensionId 'doggy8088.angular-extension-pack'
