@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vscode-angular-extension-pack</id>
+    <version>12.0.2</version>
+    <packageSourceUrl>https://github.com/doggy8088/chocolatey-vscode-angular-extension-pack.git</packageSourceUrl>
+    <owners>Will 保哥</owners>
+    <title>Angular Extension Pack VSCode Extension</title>
+    <authors>Will 保哥</authors>
+    <projectUrl>https://github.com/doggy8088/angular-extension-pack</projectUrl>
+    <iconUrl>https://github.com/doggy8088/angular-extension-pack/raw/master/icon.png</iconUrl>
+    <copyright>Will 保哥</copyright>
+    <licenseUrl>https://github.com/doggy8088/angular-extension-pack/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/doggy8088/angular-extension-pack</projectSourceUrl>
+    <docsUrl>https://github.com/doggy8088/angular-extension-pack/</docsUrl>
+    <bugTrackerUrl>https://github.com/doggy8088/angular-extension-pack/issues</bugTrackerUrl>
+    <tags>vscode angular</tags>
+    <summary>Angular Extension Pack for Visual Studio Code</summary>
+    <description>Angular Extension Pack for Visual Studio Code</description>
+    <releaseNotes>
+* Replace [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) (`quicktype`) with [Paste JSON as Code (Refresh)](https://marketplace.visualstudio.com/items?itemName=doggy8088.quicktype-refresh) (`Will 保哥`).
+  * It because the original [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype) extension is not updating since **9/20/2018, 11:48:28 PM**. Many of the already fixed bugs/issues are not released. That's why I published this extension with latest version from the [quicktype/quicktype-vscode](https://github.com/quicktype/quicktype-vscode) repo.
+* Replace [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) (`Joel Day`) with [Document This](https://marketplace.visualstudio.com/items?itemName=oouo-diogo-perdigao.docthis) (`oouo-diogo-perdigao`).
+  * The old [Document This](https://marketplace.visualstudio.com/items?itemName=joelday.docthis) extension has been removed.
+* Remove [JSON to TS](https://marketplace.visualstudio.com/items?itemName=MariusAlchimavicius.json-to-ts).
+  * The [Paste JSON as Code (Refresh)](https://marketplace.visualstudio.com/items?itemName=doggy8088.quicktype-refresh) fits all circumstances.
+* Remove [Latest TypeScript and Javascript Grammar](https://marketplace.visualstudio.com/items?itemName=ms-vscode.typescript-javascript-grammar).
+* Remove [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag).
+  * The exact same feature has been built-in into VSCode. To enable this, please check [Auto update tags](https://code.visualstudio.com/Docs/languages/html#_auto-update-tags) section.
+* Remove [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin).
+  * TSLint's support for Angular CLI is discontinued and it already marking deprecated since Angular CLI 11.
+  * You can follow [this guideline](https://github.com/angular-eslint/angular-eslint#migrating-an-angular-cli-project-from-codelyzer-and-tslint) for migrating an Angular CLI project from Codelyzer and TSLint to ESLint.
+* Update `README.md`
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
